@@ -29,7 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     "Behind all the teasing and silly fights, I hope you know how much you mean to me. You’ve been my support system, my cheerleader, and one of the people I can always count on.",
 
-    "Life will change, we’ll grow, and we’ll probably keep annoying each other forever — but one thing won’t change: I’ll always have your back, just like you’ve always had mine. Happy Birthday, Akka. ❤️"
+    "Life will change, we’ll grow, and we’ll probably keep annoying each other forever — but one thing won’t change: I’ll always have your back, just like you’ve always had mine.",
+    "Happy Birthday, Akka. ❤️",
+
+    "Forever grateful that I get to call you my sister."
   ];
 
   // Personalize names throughout the website.
