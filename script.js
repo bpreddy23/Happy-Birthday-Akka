@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (byId("envelopeHint")) {
       byId("envelopeHint").textContent =
-        "TAP TO OPEN YOUR SISTER’S BIRTHDAY LETTER 💌";
+        "TAP TO OPEN YOUR BIRTHDAY LETTER 💌";
     }
 
     if (typedLetter) typedLetter.replaceChildren();
