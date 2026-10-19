@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f7">
+
+  <title>Happy Birthday, My Sister! 💖</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="sparkle-field" id="sparkleField" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" id="brandLink">
+      <span class="brand-heart">♥</span> tiny birthday universe
+    </a>
+
+    <div class="top-actions">
+      <button class="music-toggle" id="musicToggle" type="button"
+              aria-pressed="false" title="Toggle background music">
+        ♫ <span>Sound off</span>
+      </button>
+
+      <span class="progress-label" id="progressLabel">
+        Surprise 1 of 4
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <!-- SCENE 1: WELCOME -->
+    <section class="scene hero active" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="tiny-star">✦</span>
+          TODAY IS ALL ABOUT YOU, SIS
+          <span class="tiny-star">✦</span>
+        </p>
+
+        <h1>
+          Hey, <span class="name-highlight" id="friendName">Akka</span>!
+          <br>
+          <span class="headline-second">Today, the world celebrates</span>
+          <em>you.</em>
+        </h1>
+
+        <p class="hero-description">
+          It’s your special day, and I made this little corner of the
+          internet just to remind you how loved you are. 🎂💖
+        </p>
+
+        <button class="primary-button" id="startButton" type="button">
+          A little surprise for you <span>💌</span>
+        </button>
+
+        <p class="micro-note">
+          Warning: may cause smiling, eye-rolling &amp; happy tears.
+        </p>
+      </div>
+
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="floating-note note-one">My forever sister 💗</div>
+        <div class="floating-note note-two">100% iconic 👑</div>
+
+        <div class="hero-photo-frame">
+          <img
+            src="images/img-1.jpeg"
+            alt="My sister smiling"
+            class="hero-photo"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"
+          >
+
+          <div class="photo-placeholder">
+            📸
+            <span>Add her photo</span>
+            <small>images/img-1.jpeg</small>
+          </div>
+
+          <span class="frame-sticker">★ BIRTHDAY QUEEN ★</span>
+        </div>
+
+        <span class="doodle doodle-heart">♡</span>
+        <span class="doodle doodle-star">✦</span>
+        <span class="doodle doodle-spark">✧</span>
+      </div>
+
+      <div class="scroll-cue">
+        <span></span> YOUR LITTLE ADVENTURE STARTS HERE
+      </div>
+    </section>
+
+    <!-- SCENE 2: MEMORIES -->
+    <section class="scene gallery-scene" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE BOX OF MEMORIES</p>
+
+        <h2>
+          A little gallery of <em>my favourite girl.</em>
+        </h2>
+
+        <p>
+          Every picture holds a memory, and every memory reminds me
+          how lucky I am to have you as my sister. Tap each photo for
+          a little message. 💕
+        </p>
+      </div>
+
+      <div class="photo-gallery">
+        <button class="polaroid polaroid-one" type="button"
+          data-message="Proof that you were born to shine, sis. The camera knows it, and honestly, so do we. ✨">
+
+          <span class="polaroid-image">
+            <img src="images/img-2.jpg" alt="Memory photo one"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+
+            <span class="photo-placeholder">
+              📷<small>images/img-2.jpg</small>
+            </span>
+          </span>
+
+          <span class="polaroid-caption">birthday queen energy ✨</span>
+          <span class="photo-tap">tap me!</span>
+        </button>
+
+        <button class="polaroid polaroid-two" type="button"
+          data-message="You’ve always had my back, celebrated my happiness like it was your own, and been my strongest support. I’ll always be yours, just like you’ve always been mine. ❤️">
+
+          <span class="polaroid-image">
+            <img src="images/img-3.jpeg" alt="Memory photo two"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+
+            <span class="photo-placeholder">
+              🖼️<small>images/img-3.jpeg</small>
+            </span>
+          </span>
+
+          <span class="polaroid-caption">My built-in bestie for life. 😂💗</span>
+          <span class="photo-tap">tap me!</span>
+        </button>
+
+        <button class="polaroid polaroid-three" type="button"
+          data-message="Different moods, endless memories, and one sister I would choose in every lifetime. 😂🤍">
+
+          <span class="polaroid-image">
+            <img src="images/img-4.jpeg" alt="Memory photo three"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+
+            <span class="photo-placeholder">
+              🌷<small>images/img-4.jpeg</small>
+            </span>
+          </span>
+
+          <span class="polaroid-caption">Being your brother: Forever/10 ❤️💕</span>
+          <span class="photo-tap">tap me!</span>
+        </button>
+      </div>
+
+      <p class="gallery-footnote">
+        Go forward and find your birthday letter 🕵️‍♀️💌
+      </p>
+
+      <button class="secondary-button next-button"
+              type="button" data-next="letter">
+        Open my heartfelt letter <span>→</span>
+      </button>
+    </section>
+
+    <!-- SCENE 3: BIRTHDAY LETTER -->
+    <section class="scene letter-scene" id="letter">
+      <div class="section-heading">
+        <p class="eyebrow">TOP SECRET · SIBLING DEPARTMENT</p>
+
+        <h2>You've got <em>mail!</em></h2>
+
+        <p>
+          Official delivery: lots of love, endless teasing, and a
+          birthday wish from your favourite sibling. 💌
+        </p>
+      </div>
+
+      <button class="envelope-wrap" id="envelopeButton"
+              type="button" aria-label="Open your birthday letter"
+              aria-expanded="false">
+
+        <div class="envelope">
+          <div class="envelope-back"></div>
+
+          <div class="letter-paper">
+            <span class="letter-paper-heart">♥</span>
+            <span class="letter-paper-text">A note for you</span>
+          </div>
+
+          <div class="envelope-flap"></div>
+          <div class="envelope-front"></div>
+          <span class="envelope-seal">♥</span>
+        </div>
+
+        <span class="envelope-hint" id="envelopeHint">
+          TAP TO OPEN YOUR SISTER’S BIRTHDAY LETTER 💌
+        </span>
+      </button>
+
+      <article class="letter-card" id="letterCard" aria-live="polite">
+        <div class="letter-card-top">
+          <span>FOR: MY AMAZING SISTER 💖</span>
+          <span>FROM: YOUR FAVOURITE SIBLING 💌</span>
+        </div>
+
+        <h3>Dear <span id="letterName">Akka</span>,</h3>
+
+        <!-- JavaScript inserts each paragraph separately here. -->
+        <div id="typedLetter" class="letter-body"></div>
+
+        <p class="letter-signoff">
+          With all my love, hugs, and a lifetime supply of sibling
+          nonsense! 🎂🤍
+          <br>
+          <strong id="senderName">Your Sibling</strong> 💗
+        </p>
+
+        <button class="text-button" id="retypeButton" type="button">
+          Read it again ↻
+        </button>
+      </article>
+
+      <button class="secondary-button next-button letter-next"
+              type="button" data-next="finale">
+        One last surprise… <span>→</span>
+      </button>
+    </section>
+
+    <!-- SCENE 4: BIRTHDAY CAKE -->
+    <section class="scene finale-scene" id="finale">
+      <div class="section-heading">
+        <p class="eyebrow">THE GRAND FINALE</p>
+
+        <h2>Make a wish, <em>birthday queen.</em></h2>
+
+        <p>
+          Close your eyes, make a beautiful wish, and get ready for
+          your birthday magic. 🎂✨
+        </p>
+      </div>
+
+      <div class="cake-stage">
+        <span class="cake-deco deco-left">✦</span>
+        <span class="cake-deco deco-right">♡</span>
+
+        <div class="cake">
+          <div class="candles">
+            <button class="candle" type="button"
+                    aria-label="Blow out candle one"
+                    aria-pressed="false">
+              <span class="flame"></span>
+            </button>
+
+            <button class="candle" type="button"
+                    aria-label="Blow out candle two"
+                    aria-pressed="false">
+              <span class="flame"></span>
+            </button>
+
+            <button class="candle" type="button"
+                    aria-label="Blow out candle three"
+                    aria-pressed="false">
+              <span class="flame"></span>
+            </button>
+          </div>
+
+          <div class="cake-top"></div>
+          <div class="cake-layer layer-top"></div>
+          <div class="cake-layer layer-bottom"></div>
+          <div class="cake-plate"></div>
+
+          <span class="cake-sprinkles">✦ · ♥ · ✦ · ♥ · ✦</span>
+        </div>
+
+        <p class="wish-hint" id="wishHint">
+          Make a wish, sis! Tap the candles or the button below. 💫
+        </p>
+      </div>
+
+      <button class="primary-button wish-button"
+              id="wishButton" type="button">
+        Make a wish ✨
+      </button>
+
+      <div class="final-message" id="finalMessage" aria-live="polite">
+        <div class="final-badge">A LITTLE WISH, A LOT OF LOVE 💫</div>
+
+        <h3>
+          May this new year of your life bring
+          <em>beautiful beginnings</em>…
+        </h3>
+
+        <p>
+          …more laughter than worries, more peace than stress,
+          exciting adventures, dreams coming true, good health,
+          and people who love you as deeply as you deserve.
+          No matter where life takes us, I will always be cheering
+          for you. 💗
+        </p>
+
+        <p class="final-joke">
+          P.S. You may be growing older, but you will always be the
+          same lovable troublemaker to me. 😂💕
+        </p>
+
+        <p class="final-signoff">
+          Happy Birthday, <span id="finalName">Akka</span>! 💖
+        </p>
+
+        <p class="from-line">
+          Made with all my love by
+          <strong id="finalSender">Your Sibling</strong>.
+        </p>
+
+        <button class="secondary-button" id="replayButton" type="button">
+          Replay the magic ↻
+        </button>
+      </div>
+
+      <div class="confetti-layer" id="confettiLayer"
+           aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <!-- PHOTO MESSAGE MODAL -->
+  <div class="photo-modal" id="photoModal" role="dialog"
+       aria-modal="true" aria-labelledby="modalMessage" hidden>
+
+    <button class="modal-close" id="modalClose" type="button"
+            aria-label="Close photo message">×</button>
+
+    <div class="modal-card">
+      <div class="modal-photo-wrap">
+        <img id="modalPhoto" src="" alt="Selected memory">
+      </div>
+
+      <p class="modal-message" id="modalMessage"></p>
+
+      <span class="modal-sparkle">
+        ✦ made with sibling love ✦
+      </span>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Keep your music file in the audio folder. -->
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="audio/a-cheerful-ukulele-waltz.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
