@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (hint) {
       hint.textContent = opened
         ? "YOUR BIRTHDAY LETTER IS OPEN 💗"
-        : "TAP TO OPEN YOUR SISTER’S BIRTHDAY LETTER 💌";
+        : "TAP TO OPEN YOUR BIRTHDAY LETTER 💌";
     }
 
     letterCard?.classList.toggle("visible", opened);
